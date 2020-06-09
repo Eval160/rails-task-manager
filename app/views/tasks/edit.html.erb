@@ -1,14 +1,6 @@
 <h1>Edit task</h1>
 <div class="form-group">
-  <%= form_for(@task) do |f| %>
-      <%= f.label :title%>
-      <%= f.text_field :title, class: "form-control" %>
-      <%= f.label :details %>
-      <%= f.text_area :details, class: "form-control" %>
-      <%= f.check_box :completed, {}, true  %>
-      <%= f.label :completed %>
-      <%= f.submit %>
-  <% end %>
+  <%= render "form", restaurant: @restaurant %>
 </div>
 <div class="d-flex">
     <svg class="bi bi-arrow-counterclockwise mr-2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
